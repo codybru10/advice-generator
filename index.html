@@ -9,29 +9,47 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <h1>Stress Test</h1>
+      </div>
+
       <form id="stress_test">
 
         <div class="form-group">
           <p>Check all warning signs that apply.</p>
-          <input type="checkbox" name="warning-signs" value=""> <br>
-          <input type="checkbox" name="warning-signs" value=""> <br>
-          <input type="checkbox" name="warning-signs" value=""> <br>
-          <input type="checkbox" name="warning-signs" value=""> <br>
-          <input type="checkbox" name="warning-signs" value=""> <br>
-          <input type="checkbox" name="warning-signs" value=""> <br>
+          <input type="checkbox" name="warning-signs" value="1"> Loss of Sleep<br>
+          <input type="checkbox" name="warning-signs" value="1"> Feeling overwhelmed<br>
+          <input type="checkbox" name="warning-signs" value="1"> Lack of energy<br>
+          <input type="checkbox" name="warning-signs" value="1"> Feeling on edge<br>
+          <input type="checkbox" name="warning-signs" value="1"> Being more emotional<br>
+          <input type="checkbox" name="warning-signs" value="1"> Change of eating habits<br>
         </div>
 
         <div class="form-group">
           <p>Check all symptons that apply.</p>
-          <input type="checkbox" name="symptoms" value=""> <br>
-          <input type="checkbox" name="symptoms" value=""> <br>
-          <input type="checkbox" name="symptoms" value=""> <br>
-          <input type="checkbox" name="symptoms" value=""> <br>
-          <input type="checkbox" name="symptoms" value=""> <br>
-          <input type="checkbox" name="symptoms" value=""> <br>
+          <input type="checkbox" name="symptoms" value="1"> Headaches<br>
+          <input type="checkbox" name="symptoms" value="1"> Upset stomach<br>
+          <input type="checkbox" name="symptoms" value="1"> Aches and pains<br>
+          <input type="checkbox" name="symptoms" value="1"> Chest pain and rapid heartbeat<br>
+          <input type="checkbox" name="symptoms" value="1"> Insomnia<br>
+          <input type="checkbox" name="symptoms" value="1"> Frequent colds and infections<br>
         </div>
 
+        <div class="form-group">
+          <p>Check all coping methods you practice</p>
+          <input type="checkbox" name="cope" value="1"> Meditation<br>
+          <input type="checkbox" name="cope" value="1"> Walking your dog<br>
+          <input type="checkbox" name="cope" value="1"> Exercise<br>
+        </div>
+
+        <button type="submit" name="button">How stressed are you?</button>
       </form>
+      <div id="output">
+
+        <p>Total Result</p>
+        <span id="adviceOutput"></span>
+      </div>
+
     </div>
   </body>
 </html>
